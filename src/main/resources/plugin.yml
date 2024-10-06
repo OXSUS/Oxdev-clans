@@ -1,0 +1,15 @@
+name: oxdev-clans
+version: '${project.version}'
+main: ox.dev.oxdevclans.Oxdev_clans
+api-version: '1.19'
+author: YoungOxsus
+depend: [PlaceholderAPI]
+
+commands:
+  klan:
+    description: Komendy klanów
+    usage: /<command>
+    aliases: [clan]
+permissions:
+  oxclans.admin:
+    default: op

@@ -1,0 +1,48 @@
+# Plik konfiguracyjny pluginu Oxdev-clans
+ranking:
+  start: 1000
+  max_gain: 100
+  max_loss: 100
+
+messages:
+  kill_message: "&a{killer} zabił gracza {killed} i zyskał {ranking_gain} punktów rankingu!"
+  death_message: "&cZostałeś zabity przez gracza {killer} i straciłeś {ranking_loss} punktów rankingu."
+  create_clan_success: "&aPomyślnie utworzono klan o nazwie {klan}!"
+  create_clan_failure: "&cKlan o tej nazwie już istnieje lub już jesteś członkiem innego klanu!"
+  clan_name_too_short: "&cNazwa klanu musi mieć co najmniej 3 litery!"
+  delete_clan_success: "&aPomyślnie usunięto klan {klan}!"
+  delete_clan_failure: "&cKlan o nazwie {klan} nie istnieje!"
+  add_leader_success: "&aPomyślnie dodano gracza {leader} jako lidera klanu {klan}!"
+  add_leader_failure: "&cGracz {leader} jest już liderem tego klanu lub klan nie istnieje!"
+  kick_member_success: "&aPomyślnie wyrzucono gracza {player} z klanu {klan}!"
+  kick_member_failure: "&cNie udało się wyrzucić gracza {player} z klanu (może nie jest członkiem lub klan nie istnieje)!"
+  leave_clan_success: "&aPomyślnie opuściłeś klan {klan}!"
+  leave_clan_failure: "&cNie możesz opuścić tego klanu (może jesteś właścicielem lub klan nie istnieje)!"
+  clan_info: "&a&lInformacje o klanie: {klan}\n&aLiderzy: {leaders}\n&aCzłonkowie: {members}"
+  clan_not_exist: "&cKlan o nazwie {klan} nie istnieje!"
+  player_ranking: "&aRanking gracza {player}: {ranking} punktów."
+  invite_member_success: "&aPomyślnie zaproszono gracza {player} do klanu {klan}!"
+  invite_member_failure: "&cNie udało się zaprosić gracza {player} do klanu (klan może nie istnieje lub gracz jest już w innym klanie)!"
+  join_clan_success: "&aPomyślnie dołączyłeś do klanu {klan}!"
+  join_clan_failure: "&cNie udało się dołączyć do klanu {klan} (może nie masz zaproszenia, klan nie istnieje lub jesteś już w innym klanie)!"
+  unknown_command: "&cNieznana komenda. Użyj /klan aby zobaczyć dostępne komendy."
+  help_header: "&c&lCentrum pomocy klanów"
+  help_command: "&a/klan {command} - {description}"
+  reload_success: "&aKonfiguracja pluginu została przeładowana."
+  never_played: "&cGracz {player} nigdy nie był na serwerze."
+  admin_reset_success: "&aStatystyki gracza {player} zostały zresetowane."
+
+# Typ bazy danych: MYSQL, SQLITE
+databaseType: "SQLITE" # Możesz ustawić "MYSQL" jeśli używasz MySQL
+
+# Ustawienia MySQL
+mysql:
+  host: "localhost"
+  port: "3306"
+  username: "user"
+  password: "pass"
+  database: "database_name"
+
+# Ustawienia SQLite
+sqlite:
+  file: "plugins/oxdevclans/database.db" # Ścieżka do pliku bazy danych SQLite
